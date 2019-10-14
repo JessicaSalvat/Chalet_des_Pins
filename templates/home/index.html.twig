@@ -1,0 +1,70 @@
+{% extends 'layoutvisitor.html.twig' %}
+
+{% block title %}Le Chalet des Pins - Page d'accueil{% endblock %}
+
+{% block body %}
+    {% include '_banner.html.twig' %}
+
+    <section class="container-fluid whoweare">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="pb-4 pt-4 text-center wtitle"> Chambres d'hôtes dans une longére solognote au cœur des châteaux de la Loire à proximité du zoo de Beauval.</h2>
+                </div>
+                <div class="col-6 pt-lg-5">
+                    <p>
+                        Situé à Rougeou, à 27 minutes en voiture du zoo de Beauval, Olivier, Christine et Chamalow vous accueillent chaleuresement au le Chalet Des Pins est une maison d'hôtes proposant des hébergements au cœur d'un parc de 3,5 hectares.
+                        <br>
+                        Chaque hébergement donne sur le jardin et dispose d'une connexion Wi-Fi gratuite. Le parking privé est gratuit sur place.
+                    </p>
+                    <!--
+                    <p>
+                        La Suite Familiale pourvue d'une entrée indépendante est située au rez de chaussée de la maison d'hôte. Elle comporte une salle de bains privative.
+                        <br>
+                        Les roulottes chauffées comportent une chambre double, une salle de bains, 2 lits superposés et un canapé-lit. Vous pourrez vous détendre sur la terrasse.
+                        <br>
+                        Sur place, vous trouverez une aire de pique-nique.
+                        <br>
+
+                        Le petit-déjeuner vous sera servi chaque matin dans la salle à manger.
+                        <br>
+                        Le dîner peut être préparé sur demande préalable et moyennant un supplément pour chaque personne. Vous aurez accès à une terrasse bien exposée.
+                        <br>
+                        </p>
+                        -->
+                </div>
+                <div class="col-6 pb-5">
+                    <img class="rounded-circle cat" src="{{ asset('build/images/cat.jpg') }}" alt="cat">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid rooms banner paral">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="pt-lg-5 text-center wtitle text-white align-middle">
+                        Le parc comprend un bois, un étang et une petite ferme caprine. La région est par ailleurs réputée pour ses châteaux et ses vignobles.
+                        <br>
+                        Les environs se prêtent à la randonnée. Blois se trouve à 30 minutes en voiture du Chalet Des Pins. Amboise est à 51 km.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid presta whoweare">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="pb-4 pt-4 text-center wtitle">Nos Chambres</h2>
+                </div>
+                <div class="col-3 pt-lg-5 offset-3">
+                        <a href="#"><img class="rounded-circle bed brightness" src="{{ asset('build/images/bed.jpg') }}" alt="cat"></a>
+                </div>
+            <div class="col-2 pt-lg-5">
+                        <a href=""><img class="rounded-circle bed brightness" src="{{ asset('build/images/lousianna.jpg') }}" alt="cat"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
